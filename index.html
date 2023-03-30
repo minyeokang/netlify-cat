@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>create svg by lottie</title>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      /* cursor: url('fa-paw.png'), auto */
+    }
+
+    .flex {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+    }
+    
+/***control size of container not lottie svg itself***/
+    #lottie-home {
+      width: 150px;
+      height: 150px;
+    }
+   
+    button {
+      background: none;
+      border: 0;
+      cursor: pointer;
+      width: 10em;
+      position: absolute;
+      transition: all .5s;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex">
+    <div id="lottie-home"></div>
+    <button></button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js" integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
